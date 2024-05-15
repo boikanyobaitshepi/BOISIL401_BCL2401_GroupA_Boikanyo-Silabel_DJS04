@@ -1,11 +1,13 @@
 class BookPreview extends HTMLElement{
   constructor(){
-    super();
+    super()
+  } 
 }
-connectedCallback(){
-  this.render();
-  }
-}
+connectedCallback()
+
+const now = new Date();
+customElements.define('Book-preview', BookPreview);
+
 
 
 
