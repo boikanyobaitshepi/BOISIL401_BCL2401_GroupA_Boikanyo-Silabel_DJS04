@@ -86,7 +86,10 @@ const createBookPreviews = (books, container) => {
     container.appendChild(bookPreview);
     });
     };
-    
+
+createBookPreviews(matches.slice(0, BOOKS_PER_PAGE), getElement('[data-list-items]'));
+
+
 
 
 
