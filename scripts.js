@@ -89,7 +89,13 @@ const createBookPreviews = (books, container) => {
 
 createBookPreviews(matches.slice(0, BOOKS_PER_PAGE), getElement('[data-list-items]'));
 
+const createOptions = (options, defaultOption, container) => {
+  options.forEach((option) => {
+    const optionElement = document.createElement('option');
+    optionElement.value = option;
 
+  }
+)}
 
 
 
