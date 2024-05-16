@@ -1,15 +1,17 @@
+import { books, authors, genres, BOOKS_PER_PAGE } from './data.js';
+
 // Define the BookPreview web component
 class BookPreview extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' });
   }
-
-  connectedCallback() {
+ 
+connectedCallback() {
     const { author, id, image, title } = this.dataset;
     this.render(author, id, image, title);
   }
-  import { books, authors, genres, BOOKS_PER_PAGE } from "./data.js";
+
+
   render(author, id, image, title) {
     this.shadowRoot.innerHTML = `
       <style>
