@@ -97,6 +97,10 @@ const createOptions = (options, defaultOption, container) => {
   }
 )}
 
+createOptions(genres, 'All Genres', getElement('[data-search-genres]'));
+createOptions(authors, 'All Authors', getElement('[data-search-authors]'));
+
+
 
 
 
