@@ -2,9 +2,10 @@ import { books, authors, genres, BOOKS_PER_PAGE } from './data.js';
 
 // Define the BookPreview web component
 class BookPreview extends HTMLElement {
-  constructor() {
-    super();
+  static get observedAttributes() {
+      return ['author', 'id', 'image', 'title'];
   }
+
  
 connectedCallback() {
     const { author, id, image, title } = this.dataset;
