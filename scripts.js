@@ -78,6 +78,8 @@ customElements.define('book-preview', BookPreview);
 let page = 1;
 let matches = books;
 
+const getElement = (selector) => document.querySelector(selector);
+
 
 
 
