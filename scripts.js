@@ -6,11 +6,11 @@ class BookPreview extends HTMLElement {
       return ['author', 'id', 'image', 'title'];
   }
 
- 
-connectedCallback() {
-    const { author, id, image, title } = this.dataset;
-    this.render(author, id, image, title);
-  }
+  constructor() {
+    super();
+    this.attachShadow({ mode: 'open' });
+}
+
 
 
   render(author, id, image, title) {
