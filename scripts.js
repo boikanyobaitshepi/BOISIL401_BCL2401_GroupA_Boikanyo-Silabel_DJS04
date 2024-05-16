@@ -64,15 +64,23 @@ attributeChangedCallback(name, oldValue, newValue) {
               <div class="preview">
               <img src="${image}" alt="${title}">
               <h3 class="title">${title}</h3>
-              
+              <div class="preview_author">${authors[author]}</div>
+              </div>
+              `;
+              this.attachShadow({mode: 'open'});
+              this.shadowRoot.appendChild(template.content.cloneNode(true));
+            }
+          }
+        
+
+
           
 
           
 
       
 
-  }
-}
+  
 
 // Register the BookPreview custom element
 customElements.define('book-preview', BookPreview);
