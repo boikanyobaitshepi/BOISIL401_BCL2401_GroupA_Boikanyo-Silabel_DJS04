@@ -55,19 +55,22 @@ attributeChangedCallback(name, oldValue, newValue) {
             font-size: 1.25rem;
             font-weight: 500;
             }
+        
+            .preview .author {
+              font-size: 0.875rem;
+              font-weight: 400;
+              }
+              </style>
+              <div class="preview">
+              <img src="${image}" alt="${title}">
+              <h3 class="title">${title}</h3>
+              
+          
+
+          
 
       
 
-      
-      </style>
-      <button class="preview" data-preview="${id}">
-        <img class="preview__image" src="${image}" alt="Book cover" />
-        <div class="preview__info">
-          <h3 class="preview__title">${title}</h3>
-          <div class="preview__author">${author}</div>
-        </div>
-      </button>
-    `;
   }
 }
 
