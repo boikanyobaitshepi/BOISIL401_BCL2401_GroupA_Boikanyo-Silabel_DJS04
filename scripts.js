@@ -106,6 +106,17 @@ const applyTheme = (theme) => {
   themeStyles.setAttribute('data-theme', theme);
   themeStyles.setAttribute('data-theme', theme);
 }
+
+applyTheme(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+
+const updateShowMoreButton = () => {
+  const showMoreButton = getElement('[data-show-more]');
+  const showMoreButtonDisabled = getElement('[data-show-more-disabled]');
+  const showMoreButtonEnabled = getElement('[data-show-more-enabled]');
+  const showMoreButtonHidden = getElement('[data-show-more-hidden]');
+  const showMoreButtonVisible = getElement('[data-show-more-visible]');
+}
+
    
 
 
