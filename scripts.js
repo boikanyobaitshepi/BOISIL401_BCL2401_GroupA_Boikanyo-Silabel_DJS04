@@ -71,19 +71,11 @@ attributeChangedCallback(name, oldValue, newValue) {
               this.shadowRoot.appendChild(template.content.cloneNode(true));
             }
           }
-        
-
-
-          
-
-          
-
-      
-
-  
 
 // Register the BookPreview custom element
 customElements.define('book-preview', BookPreview);
+
+
 
 
 
