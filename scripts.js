@@ -43,21 +43,17 @@ attributeChangedCallback(name, oldValue, newValue) {
             border: 1px solid rgba(var(--color-dark), 0.15);
             background: rgba(var(--color-light), 1);
         }
-.preview:hover {
-  background: rgba(var(--color-light), 0.9);
-  }
-  .preview img {
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    }
-    
-        .preview__image {
-          width: 50px;
-          height: 75px;
-          object-fit: cover;
-          margin-right: 10px;
-        }
+          .preview:hover {
+            background: rgba(var(--color-light), 0.9);
+            }
+            .preview img {
+              width: 100px;
+              height: 100px;
+              border-radius: 8px;
+              }
+              .preview .title {
+                font-size: 1.25rem;
+              
         .preview__info {
           display: flex;
           flex-direction: column;
