@@ -47,24 +47,18 @@ attributeChangedCallback(name, oldValue, newValue) {
             background: rgba(var(--color-light), 0.9);
             }
             .preview img {
-              width: 100px;
-              height: 100px;
-              border-radius: 8px;
-              }
-              .preview .title {
-                font-size: 1.25rem;
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+             }
+            .preview .title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            }
 
-        
-              
-        .preview__info {
-          display: flex;
-          flex-direction: column;
-        }
-        
-        .preview__author {
-          font-size: 0.875em;
-          color: grey;
-        }
+      
+
+      
       </style>
       <button class="preview" data-preview="${id}">
         <img class="preview__image" src="${image}" alt="Book cover" />
