@@ -80,6 +80,14 @@ let matches = books;
 
 const getElement = (selector) => document.querySelector(selector);
 
+const createBookPreviews = (books, container) => {
+  books.forEach((book) => {
+    const bookPreview = new BookPreview(book);
+    container.appendChild(bookPreview);
+    });
+    };
+    
+
 
 
 
