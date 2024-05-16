@@ -11,6 +11,9 @@ class BookPreview extends HTMLElement {
     this.attachShadow({ mode: 'open' });
 }
 
+connectedCallback(){
+  this.render();
+}
 
 
   render(author, id, image, title) {
