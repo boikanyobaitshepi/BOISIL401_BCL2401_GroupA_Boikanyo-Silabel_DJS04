@@ -53,15 +53,14 @@ attributeChangedCallback(name, oldValue, newValue) {
               }
               .preview .title {
                 font-size: 1.25rem;
+
+        
               
         .preview__info {
           display: flex;
           flex-direction: column;
         }
-        .preview__title {
-          font-size: 1em;
-          margin: 0;
-        }
+        
         .preview__author {
           font-size: 0.875em;
           color: grey;
