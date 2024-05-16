@@ -100,6 +100,14 @@ const createOptions = (options, defaultOption, container) => {
 createOptions(genres, 'All Genres', getElement('[data-search-genres]'));
 createOptions(authors, 'All Authors', getElement('[data-search-authors]'));
 
+const applyTheme = (theme) => {
+  const themeStyles = document.querySelector('[data-theme-styles]');
+  themeStyles.setAttribute('href', `./css/${theme}.css`);
+  themeStyles.setAttribute('data-theme', theme);
+  themeStyles.setAttribute('data-theme', theme);
+}
+   
+
 
 
 
