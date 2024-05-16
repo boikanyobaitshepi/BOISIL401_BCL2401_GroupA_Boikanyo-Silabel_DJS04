@@ -21,8 +21,14 @@ attributeChangedCallback(name, oldValue, newValue) {
   }
 }
 
-  render(author, id, image, title) {
-    this.shadowRoot.innerHTML = `
+  render() {
+    const author = this.getAttribute('author');
+        const id = this.getAttribute('id');
+        const image = this.getAttribute('image');
+        const title = this.getAttribute('title');
+
+        const template = document.createElement('template');
+        template.innerHTML = `
       <style>
         .preview {
           border: none;
